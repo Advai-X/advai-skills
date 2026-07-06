@@ -1,0 +1,17 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Advai Skills",
+      "description": "Skills for working with the advai CLI and related workflows.",
+      "skills": [
+        "advai-browser",
+        "advai-cli",
+        "advai-info",
+        "advai-knowledge",
+        "advai-skill"
+      ]
+    }
+  ]
+}
