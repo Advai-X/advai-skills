@@ -25,7 +25,7 @@ This repository is the source of truth for a small set of task-focused skills th
 | `advai-cli` | `advai cli` | Discover, install, update, uninstall, and proxy external CLIs |
 | `advai-info` | `advai info`, `advai update` | Inspect runtime details and show upgrade guidance |
 | `advai-knowledge` | `advai kb` | Create, search, and sync local knowledge bases |
-| `advai-skill` | `advai skill` | Install, inspect, sync, update, and uninstall skills |
+| `advai-skill` | `advai skill` | Search, install, inspect, sync, update, uninstall, and manage skill platforms |
 
 ## Usage
 
@@ -35,13 +35,19 @@ Install from the `skills.sh` ecosystem with the `skills` CLI:
 npx skills add Advai-X/advai-skills
 ```
 
-Install this repository as a skill source with `advai skill`:
+Search for an installable skill:
 
 ```bash
-advai skill install https://github.com/Advai-X/advai-skills
+advai skill search advai --limit 10
 ```
 
 Install and immediately sync a single skill to a supported platform:
+
+```bash
+advai skill install advai-browser --source github --platform trae
+```
+
+Install directly from a GitHub repository:
 
 ```bash
 advai skill install https://github.com/Advai-X/advai-skills --skill advai-browser --platform trae
